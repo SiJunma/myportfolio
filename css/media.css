@@ -1,0 +1,102 @@
+@media screen and (max-width: 1220px) {
+	.container {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 1217px) {
+	.apple {
+		margin-right: 0;
+	}
+	.list__item:last-child {
+		display: block;
+		margin: 0 auto;
+		margin-top: 60px;
+	}
+		.development__list {
+    	margin-bottom: 100px;
+	}
+
+	h2 {
+    	margin-top: 110px;
+}
+
+@media screen and (max-width: 960px) {
+	.head__menu {
+		display: none;
+	}
+	.offer {
+		padding-top: 19px;
+	}
+
+	.about__text {
+		text-align: center;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 781px) {
+	.list__item {
+		display: block;
+		margin: 0 auto;
+		margin-top: 60px;
+	}
+
+	.about__text {
+		width: 80%;
+	}
+
+	.about__text p:last-child {
+    	margin-bottom: 0;
+	}
+
+	#about {
+		background-image: none;
+		background-color: #eeebe0;
+		height: auto;
+		padding-bottom: 100px;
+	}
+
+
+}
+
+@media screen and (max-width: 500px) {
+	.head__logo, .mail {
+		clear: both;
+		display: block;
+		text-align: center;
+		width: 100%;
+		border: none;
+	}
+
+	.head {
+		padding-top: 35px;
+		margin-bottom: 29px;
+	}
+
+	.mail {
+		margin-top: 10px;
+	}
+}
+
+@media screen and (max-width: 472px) {
+	.offer {
+		padding-top: 1px;
+	}
+
+	h1 {
+		margin: 0 auto;
+		margin-top: 62px;
+		width: 232px;
+	}
+
+	.offer__big {
+		line-height: 60px;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	.list__item {
+		width: 86%;
+	}
+}
