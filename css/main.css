@@ -42,6 +42,7 @@ body {
     margin: 0;
 }
 
+
 p {
     margin: 0;
     padding: 0;
@@ -172,6 +173,7 @@ header .container {
 .menu__item a:hover {
     border-bottom: 2px solid #b9ac98;
     padding-bottom: 7px;
+    transition: all 0.4s ease;
 }
 
 .mail {
@@ -229,6 +231,15 @@ header .container {
     margin: 0 auto;
 }
 
+.apple:before {
+    background: url(../img/apple.jpg) no-repeat;   
+}
+
+.support:before {
+    background: url(../img/support.jpg) no-repeat;   
+
+}
+
 .development__list {
     margin-bottom: 131px;
     text-align: center;
@@ -256,14 +267,21 @@ header .container {
     line-height: 25px;
 }
 
-#skills .h2-wrapper:before {
+.h2-wrapper:before {
     position: absolute;
-    content: 'S';
+    content: '';
     font-size: 200px;
     color: #f0efee;
     top: -100px;
     left: 38%;
     z-index: 0;
+    font-family: 'Museo Sans Cyrl', arial, serif;
+    font-weight: 700;
+}
+
+#skills .h2-wrapper:before {
+    content: 'S';
+    font-family: 'Museo Sans Cyrl', arial, serif;
     font-weight: 700;
 }
 
@@ -294,6 +312,14 @@ header .container {
     background: url(../img/responsive.jpg) no-repeat; 
 }
 
+.code:before {
+    background: url(../img/code.jpg) no-repeat; 
+}
+
+.ai:before {
+    background: url(../img/ai.jpg) no-repeat;
+}
+
 .left-skills {
     margin-right: 135px;
     display: inline-block;
@@ -305,4 +331,226 @@ header .container {
 
 .skills {
 text-align: center;
+margin-bottom: 60px;
+}
+
+#portfolio {
+    background: url(../img/portfolio.jpg) no-repeat top center; 
+    height: 1013px;
+}
+
+#portfolio h2 {
+    padding-top: 175px;
+    margin-top: 0;
+    color: #fff;
+}
+
+#portfolio .h2-wrapper:before {
+    content: 'P';
+    color: rgba(255, 255, 255, 0.05);
+    top: 85px;
+    left: 32%;
+}
+
+.card__item {
+    background-color: #fff;
+    width: 369px;
+    height: 455px;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 28px;
+}
+
+.card__item:last-child {
+    margin-right: 0;
+}
+
+#portfolio h3 {
+    text-align: left;
+    padding: 0 40px;
+}
+
+.card__item:before {
+    content: ' ';
+    display: block;
+    background: url(../img/first.jpg) no-repeat top center;
+    height: 223px;
+    width: 369px;
+}
+
+.second:before {
+    background: url(../img/second.jpg) no-repeat top center;
+}
+
+.third:before {
+    background: url(../img/third.jpg) no-repeat top center;
+}
+
+.card__item:hover {
+    box-shadow: 0 0 25px;
+}
+
+.portfolio__description {
+    margin-bottom: 25px;
+    padding: 0 40px;
+}
+
+.view {
+    color: #d15505;
+    margin-left: 40px;
+}
+
+.view:hover {
+    border-bottom: 1px solid #da7737;
+    transition: all 0.4s ease;
+}
+
+.portfolio__info {
+    height: 230px;
+    box-sizing: border-box;
+    text-align: left;
+    padding-top: 0;
+}
+
+.portfolio__info:before {
+    content: ' ';
+    display: block;
+    background: #f8863d;
+    height: 4px;
+    width: 100%;
+    padding: 0;
+}
+
+.portfolio__cards {
+    text-align: center;
+}
+
+.btn {
+    font-family: 'Museo Sans Cyrl', arial, serif;
+    font-size: 19px;
+    color: #fff;
+    font-weight: 500;
+    border: 2px solid #fff;
+    padding: 14px 73px;
+    box-sizing: content-box;
+    text-transform: uppercase;
+    border-radius: 25px;
+}
+
+.button {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #3b240a;
+    transition: all 0.4s ease;
+}
+
+#contacts .h2-wrapper:before {
+    content: 'C';
+    top: -100px;
+    left: 36%;
+}
+
+#contacts input, #contacts textarea  {
+    display: block;
+    width: 703px;
+    margin: 0 auto;
+    margin-bottom: 7px;
+    border: 1px solid #868686;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(22, 33, 39, 0.2);
+    box-sizing: border-box;
+    padding: 12px 27px;
+    font-family:  corbel, arial, serif;
+    font-size: 17px;
+}
+
+::-webkit-input-placeholder {color:#afa9a4;}
+::-moz-placeholder          {color:#afa9a4;}/* Firefox 19+ */
+:-moz-placeholder           {color:#afa9a4;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#afa9a4;}
+
+#contacts input {
+    height: 45px;
+}
+
+#contacts textarea {
+    height: 233px;
+}
+
+.form {
+    text-align: center;
+}
+
+.contacts__btn {
+    background-color: #fff;
+    margin-top: 3px;
+    border-color: #f8863d;
+    color: #f8863d;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.contacts__btn:hover {
+background-color: #f8863d;
+}
+
+.clear-btn {
+    border-color: gray;
+    color: gray;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.clear-btn:hover {
+    background-color: #fff;
+    color: gray;
+}
+
+footer {
+    background: url(../img/footer.jpg) no-repeat bottom center;
+    height: 521px
+}
+
+.line {
+    padding-top: 370px;
+    text-align: center;
+    line-height: 44px;
+}
+
+.footer__logo {
+    color: #fff;
+    width: 201px;
+}
+
+.footer__logo span {
+color: #ee5d01;
+font-weight: 900;
+}
+
+.footer__copirate {
+    font-size: 13px;
+    color: #e5c8b9;
+    font-family: 'Museo Sans Cyrl', arial, serif;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    display: inline;
+}
+
+.footer__social {
+    float: right;
+}
+
+.footer__social a {
+    margin-left: 9px;
+}
+
+.footer__social img:hover {
+        box-shadow: 0 0 5px rgba(255,255,255,0.5);
+        border-radius: 50%;
 }
