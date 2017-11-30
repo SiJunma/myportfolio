@@ -2,6 +2,24 @@
 	.container {
 		width: 90%;
 	}
+
+	#portfolio {
+		background-image: none;
+		height: auto;
+		padding-bottom: 110px;
+	}
+
+	.card__item:hover {
+		box-shadow: 0 0 5px;
+	}
+
+	.second { 
+		margin-right: 0;
+	 }
+
+	 .card__item:last-child {
+	 	margin-top: 28px;
+	 }
 }
 
 @media screen and (max-width: 1217px) {
@@ -19,6 +37,36 @@
 
 	h2 {
     	margin-top: 110px;
+    }
+
+    #portfolio h2 {
+    	padding-top: 110px;
+    }
+
+    #portfolio .h2-wrapper::before {
+    	top: 26px;
+    	left: 26%;
+	}
+
+	#contacts .h2-wrapper::before {
+    	left: 32%;
+	}
+}
+
+@media screen and (max-width: 1019px) {
+	.left-skills {
+		display: block;
+		margin-right: 0;
+	}
+
+	.skills__item {
+		margin: 0 auto;
+		margin-bottom: 75px;
+	}
+
+	.ai {
+		margin-bottom: 60px;
+	}
 }
 
 @media screen and (max-width: 960px) {
@@ -32,6 +80,29 @@
 	.about__text {
 		text-align: center;
 		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.card__item, .card__item:last-child {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 28px;
+	}
+
+	.footer__social, .footer__logo {
+		float: none;
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.line {
+    	padding-top: 238px;
+	}
+
+	.footer__social {
+		margin-top: 15px;
 	}
 }
 
@@ -57,7 +128,10 @@
 		padding-bottom: 100px;
 	}
 
-
+	#contacts input, #contacts textarea {
+		width: 90%;
+	}
+	
 }
 
 @media screen and (max-width: 500px) {
