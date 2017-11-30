@@ -54,7 +54,7 @@
 }
 
 @media screen and (max-width: 1019px) {
-	.left-skills {
+	.left-skills, .right-skills {
 		display: block;
 		margin-right: 0;
 	}
@@ -66,6 +66,10 @@
 
 	.ai {
 		margin-bottom: 60px;
+	}
+
+	#skills {
+		padding-bottom: 65px;
 	}
 }
 
@@ -169,8 +173,62 @@
 	}
 }
 
+@media screen and (max-width: 430px) {
+	.card__item {
+		width: 90%;
+		height: auto;
+		padding-bottom: 30px;
+	}
+
+	.card__item::before {
+		width: auto;
+	}
+
+	.portfolio__info {
+		height: auto;
+	}
+
+	.skills__item {
+		width: auto;
+	}
+
+	.skills {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	.skills__item::before {
+		margin-right: 8%;
+	}
+
+	.contacts__btn {
+		padding: 14px 0;
+		width: 90%;
+	}
+}
+
 @media screen and (max-width: 350px) {
 	.list__item {
 		width: 86%;
 	}
+
+	.skills__item::before {
+		float: none;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+
+	.skills__item h3, .skills__item {
+			text-align: center;
+			width: auto;
+	}
+
+	.skills__item {
+		margin-bottom: 50px;
+	}
+
+	.footer__copirate {
+		letter-spacing: 0.1em;
+	}
+
 }
