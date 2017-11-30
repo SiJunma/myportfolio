@@ -70,6 +70,7 @@ body {
     color: #3b240a;
     padding: 0;
     margin: 0;
+    transition: all 0.4s ease;
 }
 
 
@@ -255,18 +256,18 @@ header .container {
 .list__item:before {
     display: block;
     content: '';
-    background: url(../img/fire.jpg) no-repeat;
+    background: url(../img/fire.svg) no-repeat;
     width: 79px;
     height: 79px;
     margin: 0 auto;
 }
 
 .apple:before {
-    background: url(../img/apple.jpg) no-repeat;   
+    background: url(../img/apple.svg) no-repeat;   
 }
 
 .support:before {
-    background: url(../img/support.jpg) no-repeat;   
+    background: url(../img/support.svg) no-repeat;   
 
 }
 
@@ -343,11 +344,11 @@ header .container {
 }
 
 .code:before {
-    background: url(../img/code.jpg) no-repeat; 
+    background: url(../img/code.svg) no-repeat; 
 }
 
 .ai:before {
-    background: url(../img/ai.jpg) no-repeat;
+    background: url(../img/ai.svg) no-repeat;
 }
 
 .left-skills {
