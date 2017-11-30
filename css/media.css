@@ -205,6 +205,10 @@
 		padding: 14px 0;
 		width: 90%;
 	}
+
+	.skills__item h3 {
+		width: auto;
+	}
 }
 
 @media screen and (max-width: 350px) {
